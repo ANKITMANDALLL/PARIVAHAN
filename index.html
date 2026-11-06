@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIVAHAN | University Transport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">P</span>
+            PRIVAHAN
+        </div>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#routes">Routes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#login" class="login-btn">Login ↗</a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="tag">ARKA JAIN UNIVERSITY</span>
+
+                <h1>
+                    Your Journey.<br>
+                    Our <span>Responsibility.</span>
+                </h1>
+
+                <p>
+                    A smarter way to manage university transportation.
+                    Explore bus routes, schedules and live tracking
+                    through one unified platform.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#login" class="primary-btn">Get Started ↗</a>
+                    <a href="#services" class="secondary-btn">Explore Services</a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <h3>30+</h3>
+                        <p>University Buses</p>
+                    </div>
+                    <div>
+                        <h3>8-10</h3>
+                        <p>Dynamic Routes</p>
+                    </div>
+                    <div>
+                        <h3>24/7</h3>
+                        <p>Access Platform</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1000"
+                    alt="University Transportation Bus"
+                >
+
+                <div class="floating-card">
+                    <span class="live-dot"></span>
+                    <div>
+                        <strong>Transportation Portal</strong>
+                        <p>Connected to your campus</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Services -->
+        <section class="services" id="services">
+
+            <div class="section-heading">
+                <span class="tag">OUR SERVICES</span>
+                <h2>Transportation Made Simple.</h2>
+                <p>Everything you need to stay connected with university transportation.</p>
+            </div>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🚌</div>
+                    <h3>Bus Information</h3>
+                    <p>Explore university buses, routes and transportation schedules.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Live Tracking</h3>
+                    <p>Track your assigned bus location through an interactive map.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🕒</div>
+                    <h3>Trip Schedules</h3>
+                    <p>Access arrival and departure information for all trips.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📢</div>
+                    <h3>Announcements</h3>
+                    <p>Stay updated with important transportation notifications.</p>
+                </div>
+
+            </div>
+        </section>
+
+        
+<!-- ROUTES SECTION -->
+
+<section class="routes-section" id="routes">
+
+    <div class="section-heading">
+        <span class="tag">UNIVERSITY TRANSPORT</span>
+        <h2>Explore Our Routes</h2>
+        <p>Find your route and check the buses assigned to it.</p>
+    </div>
+
+    <div class="routes-info">
+        <div>
+            <h3>Available Routes</h3>
+            <p>University transportation network</p>
+        </div>
+
+        <span class="route-count" id="routeCount">
+            Loading...
+        </span>
+    </div>
+
+    <!-- Routes will be loaded from server -->
+
+    <div class="route-grid" id="routeGrid">
+
+        <div class="route-loading">
+            Fetching route information...
+        </div>
+
+    </div>
+
+    <p class="data-status" id="dataStatus">
+        Connecting to transportation server...
+    </p>
+
+</section>
+
+
+        <!-- Login Section -->
+        <section class="login-section" id="login">
+
+            <div class="section-heading">
+                <span class="tag">ACCESS PORTAL</span>
+                <h2>Choose Your Portal</h2>
+                <p>Select your role to access the transportation system.</p>
+            </div>
+
+            <div class="role-grid">
+
+                <a href="#" class="role-card" data-role="student">
+                    <span>🎓</span>
+                    <h3>Student/Faculty</h3>
+                    <p>Access bus information and tracking.</p>
+                    <b>Continue →</b>
+                </a>
+
+
+                <a href="#" class="role-card" data-role="admin">
+                    <span>⚙️</span>
+                    <h3>Administrator</h3>
+                    <p>Manage university transportation.</p>
+                    <b>Continue →</b>
+                </a>
+
+                <a href="#" class="role-card" data-role="driver">
+                    <span>🚍</span>
+                    <h3>Driver</h3>
+                    <p>Access assigned buses and trips.</p>
+                    <b>Continue →</b>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="logo">
+            <span class="logo-icon">P</span>
+            PRIVAHAN
+        </div>
+
+        <p>University Transportation Management System</p>
+        <p>© 2026 PRIVAHAN. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,509 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    background: #164e9b;
+    color: white;
+    padding: 9px 13px;
+    border-radius: 9px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #164e9b;
+}
+
+.login-btn, .primary-btn {
+    background: #164e9b;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+    padding: 90px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f6ff, #ffffff);
+}
+
+.tag {
+    color: #164e9b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.12;
+    margin: 25px 0;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #164e9b;
+}
+
+.hero-content > p {
+    color: #64748b;
+    line-height: 1.8;
+    max-width: 480px;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    border: 1px solid #164e9b;
+    color: #164e9b;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-info {
+    display: flex;
+    gap: 45px;
+    margin-top: 55px;
+    flex-wrap: wrap;
+}
+
+.hero-info h3 {
+    font-size: 25px;
+    color: #164e9b;
+}
+
+.hero-info p {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 25px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+.floating-card p {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.live-dot {
+    width: 12px;
+    height: 12px;
+    background: #16a34a;
+    border-radius: 50%;
+}
+
+/* Services */
+
+.services, .login-section {
+    padding: 90px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.service-grid, .role-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card, .role-card {
+    padding: 28px 22px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.service-card:hover, .role-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.service-icon, .role-card span {
+    font-size: 32px;
+}
+
+.service-card h3, .role-card h3 {
+    margin: 20px 0 10px;
+    font-size: 17px;
+}
+
+.service-card p, .role-card p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.login-section {
+    background: #eff5fc;
+}
+
+.role-card {
+    text-decoration: none;
+    color: #172033;
+}
+
+.role-card b {
+    display: inline-block;
+    color: #164e9b;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* Footer */
+
+footer {
+    background: #101e35;
+    color: white;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer p {
+    color: #aab7c9;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .service-grid, .role-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 25px;
+        gap: 22px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .login-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 6%;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    .floating-card {
+        left: 10px;
+    }
+
+    .hero-info {
+        gap: 25px;
+    }
+
+    .services, .login-section {
+        padding: 65px 6%;
+    }
+
+    .service-grid, .role-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+}
+
+/* ROUTES SECTION */
+
+.routes-section {
+    padding: 90px 8%;
+    background: #f8fafc;
+}
+
+.routes-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.routes-info h3 {
+    font-size: 20px;
+}
+
+.routes-info p {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.route-count {
+    background: #e0edff;
+    color: #164e9b;
+    padding: 10px 17px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.route-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.route-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 24px;
+    transition: 0.3s;
+}
+
+.route-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.route-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.route-number {
+    color: #164e9b;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.route-status {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.route-card h3 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.route-divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 15px 0;
+}
+
+.bus-heading {
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.assigned-buses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bus-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f1f5f9;
+    padding: 11px;
+    border-radius: 8px;
+}
+
+.bus-icon {
+    font-size: 20px;
+}
+
+.bus-details strong {
+    font-size: 13px;
+    display: block;
+}
+
+.bus-details span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.no-bus {
+    font-size: 13px;
+    color: #64748b;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.route-loading,
+.route-error {
+    grid-column: 1 / -1;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    color: #64748b;
+}
+
+.data-status {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+@media (max-width: 900px) {
+    .route-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .route-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .routes-section {
+        padding: 65px 6%;
+    }
+}
